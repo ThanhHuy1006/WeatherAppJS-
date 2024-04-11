@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherAppJS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="enter city name" spellcheck="false">
+      <button id="search" aria-label="Search"><img src="images/search.png" alt="Search"></button>
+    </div>
+    <div class="weather">
+      <img src="images/rain.png" alt="weather" class="weather-icon">
+      <h1 class="temp">22°c</h1>
+      <div class="city">Ho Chi Minh</div>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity.png" alt="col">
+          <div>
+            <p class="humidity">50%</p> <!-- Đóng thẻ p -->
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/wind.png" alt="col">
+          <div>
+            <p class="wind">17km/h</p> <!-- Đóng thẻ p -->
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const apiKey="9bd2e217b76d460c8fee697437cfc981";
+  </script>
+</body>
+</html>
